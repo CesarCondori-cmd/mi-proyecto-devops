@@ -7,119 +7,56 @@
 **Quiero** iniciar sesión con usuario y contraseña  
 **Para** acceder al sistema de registro de casos  
 
-**Prioridad:** Must  
-
 **Criterios de Aceptación:**
-- [ ] Bloqueo tras 3 intentos fallidos
-- [ ] Contraseña enmascarada
-- [ ] Redirección al panel principal
+- [ ] El sistema debe denegar el acceso tras 3 intentos fallidos
+- [ ] El sistema debe enmascarar las contraseñas
+- [ ] El sistema debe redireccionarse al panel principal
 
 ---
 
-### RF-AUTH-02: Gestión de usuarios
-**Como** administrador  
-**Quiero** crear y gestionar usuarios  
-**Para** controlar accesos al sistema  
+## Módulo de Gestión de Casos
 
-**Prioridad:** Must  
+### RF-02: Registro de posibles casos de trata de personas
+**Como** operador del sistema
+**Quiero** registrar un posible caso ingresando datos personales, lugar de detección y observaciones
+**Para** que el caso quede formalmente documentado y pueda recibir seguimiento institucional.
 
 **Criterios de Aceptación:**
-- [ ] Crear, editar y desactivar usuarios
-- [ ] Asignar roles
-- [ ] Registrar auditoría
+- [ ] El sistema debe permitir ingresar datos personales de la víctima.
+- [ ] El sistema debe guardar el caso en la base de datos.
+- [ ] El sistema debe generar automáticamente un identificador único para cada caso.
 
 ---
 
-## Módulo Registro de Casos
-
-### RF-CASO-01: Registrar posible víctima
-**Como** funcionario migratorio  
-**Quiero** registrar datos del caso  
-**Para** iniciar seguimiento  
-
-**Prioridad:** Must  
+### RF-03: Derivación de casos a otras instituciones
+**Como** operador o administrador
+**Quiero** derivar un caso a otra institución mediante un módulo de derivación o servicios web
+**Para** que la institución correspondiente pueda continuar con la atención del caso.
 
 **Criterios de Aceptación:**
-- [ ] Genera ID único
-- [ ] Guarda datos personales y contexto
-- [ ] Estado inicial “Registrado”
+- [ ] El sistema debe permitir almacenar y seleccionar una institución receptora
+- [ ] El sistema debe registrar la fecha y hora de la derivación.
 
 ---
 
-### RF-CASO-02: Adjuntar evidencia
-**Como** funcionario  
-**Quiero** subir documentos o fotos  
-**Para** respaldar el caso  
-
-**Prioridad:** Should  
+### RF-04: Seguimiento del estado del caso
+**Como** usuario autorizado
+**Quiero** consultar el estado actual de un caso y su historial de cambios
+**Para** poder realizar seguimiento adecuado y asegurar su correcta gestión.
 
 **Criterios de Aceptación:**
-- [ ] Permite PDF e imágenes
-- [ ] Archivos asociados al caso
+- [ ] El sistema debe permitir visualizar el estado actual del caso (Registrado, Derivado, En atención, Cerrado).
+- [ ] El sistema debe mostrar el historial completo de cambios del caso.
 
 ---
 
-## Módulo Derivación
+## Módulo de Reportes e Indicadores
 
-### RF-DER-01: Derivar caso
-**Como** funcionario  
-**Quiero** derivar el caso a otra institución  
-**Para** activar atención especializada  
-
-**Prioridad:** Must  
+### RF-05: Generación de reportes e indicadores estadísticos
+**Como** administrador o analista
+**Quiero** generar reportes e indicadores estadísticos sobre los casos registrados
+**Para** analizar tendencias y apoyar la toma de decisiones institucionales.
 
 **Criterios de Aceptación:**
-- [ ] Selección de institución
-- [ ] Registro de fecha
-- [ ] Cambio de estado a “Derivado”
-
----
-
-## Módulo Seguimiento
-
-### RF-SEG-01: Actualizar estado
-**Como** operador  
-**Quiero** actualizar el estado del caso  
-**Para** mantener trazabilidad  
-
-**Prioridad:** Must  
-
-**Criterios de Aceptación:**
-- [ ] Historial de cambios
-- [ ] Registro de usuario y fecha
-
----
-
-### RF-SEG-02: Consultar historial
-**Como** institución  
-**Quiero** ver el historial del caso  
-**Para** conocer su evolución  
-
-**Prioridad:** Must  
-
-**Criterios de Aceptación:**
-- [ ] Visualizar eventos
-- [ ] Orden cronológico
-
----
-
-## Módulo Reportes
-
-### RF-REP-01: Generar reportes
-**Como** administrador  
-**Quiero** generar reportes estadísticos  
-**Para** apoyar decisiones  
-
-**Prioridad:** Should  
-
-**Criterios de Aceptación:**
-- [ ] Filtros por fecha y ubicación
-- [ ] Exportación PDF/Excel
-
----
-
-## Exclusiones (Won’t have)
-
-- Aplicación móvil nativa en primera versión
-- Inteligencia artificial predictiva
-- Registro público de denuncias
+- [ ] El sistema debe permitir filtrar reportes por rango de fechas y estado del caso.
+- [ ] El sistema debe permitir exportar los reportes en formato PDF o Excel.
