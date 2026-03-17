@@ -7,3 +7,4 @@ Sistema de informacion para el Registro, Derivacion y Seguimiento de Casos de tr
 1. Introduccion y Contexto
 2. Requerimientos Funcionales
 3. Requerimientos No Funcionales (DevOps)
+4. Historias de Usuarios
