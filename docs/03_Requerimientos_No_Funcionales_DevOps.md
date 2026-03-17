@@ -1,5 +1,3 @@
----
-
 ## 3.2 Requerimientos No Funcionales (RNF)
 
 | ID      | Categoría     | Requisito Técnico                                                                 | Prioridad |
