@@ -1,6 +1,4 @@
-#  Especificación de Requerimientos
-
-## 2 Requerimientos Funcionales (RF)
+# 2. Requerimientos Funcionales (RF)
 
 | ID     | Requerimiento                | Descripción                                                                 | Prioridad |
 |--------|------------------------------|-----------------------------------------------------------------------------|-----------|
