@@ -1,59 +1,12 @@
-# 3. Requerimientos No Funcionales (Atributos de Calidad)
-
-## 3.1 Seguridad (DevSecOps)
-
-* **RNF-SEC-01 — Cifrado en tránsito:**  
-Todo el tráfico debe usar HTTPS con TLS 1.2 o superior.  
-**Prioridad:** Must
-
-* **RNF-SEC-02 — Contraseñas seguras:**  
-Las contraseñas deben almacenarse con hashing bcrypt.  
-**Prioridad:** Must
-
-* **RNF-SEC-03 — Control de acceso:**  
-Acceso a información según rol.  
-**Prioridad:** Must
-
 ---
 
-## 3.2 Rendimiento
+## 3.2 Requerimientos No Funcionales (RNF)
 
-* **RNF-REN-01 — Tiempo de respuesta:**  
-Consultas ≤ 3 segundos.  
-**Prioridad:** Must
-
-* **RNF-REN-02 — Concurrencia:**  
-Soportar múltiples usuarios simultáneos.  
-**Prioridad:** Should
-
----
-
-## 3.3 Usabilidad
-
-* **RNF-USA-01 — Facilidad de uso:**  
-Registro de caso en menos de 5 minutos.  
-**Prioridad:** Should
+| ID      | Categoría     | Requisito Técnico                                                                 | Prioridad |
+|---------|--------------|------------------------------------------------------------------------------------|-----------|
+| RNF-01  | Seguridad     | Autenticación mediante OAuth2 o JWT y encriptación HTTPS.                         | Must      |
+| RNF-02  | Privacidad    | Protección de datos sensibles según principios de la OIM y DIGEMIG.               | Must      |
+| RNF-03  | Rendimiento   | Tiempo de respuesta en búsquedas menor a 1 segundo con 10k registros.             | Should    |
+| RNF-04  | Mantenibilidad| Entrega de códigos fuente y documentación en formatos editables (Bizagi, Visio). | Must      |
 
 ---
-
-## 3.4 Confiabilidad
-
-* **RNF-CONF-01 — Disponibilidad:**  
-Sistema disponible 99%.  
-**Prioridad:** Must
-
-* **RNF-CONF-02 — Respaldo:**  
-Backups automáticos diarios.  
-**Prioridad:** Must
-
----
-
-## 3.5 Operabilidad y Observabilidad
-
-* **RNF-OPS-01 — Logs:**  
-Registrar acciones de usuarios en formato estructurado.  
-**Prioridad:** Must
-
-* **RNF-OPS-02 — Métricas:**  
-Monitoreo de CPU y memoria.  
-**Prioridad:** Could
