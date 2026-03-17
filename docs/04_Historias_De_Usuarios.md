@@ -1,4 +1,4 @@
-#  Historias de Usuario
+#  4. Historias de Usuario
 ## Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 
 Basado en el documento de especificaciones del sistema.
