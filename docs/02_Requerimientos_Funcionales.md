@@ -1,13 +1,13 @@
-# 📄 Historias de Usuario
+#  Historias de Usuario
 ## Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 
 Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🧩 1. Módulo: Registro y Evaluación de Casos
+#  1. Módulo: Registro y Evaluación de Casos
 
-## 🧾 HU-01: Registro de indicadores
+##  HU-01: Registro de indicadores
 **Como** agente migratorio  
 **Quiero** registrar indicadores físicos, conductuales y documentales  
 **Para** detectar posibles casos de trata de personas  
@@ -19,7 +19,7 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-## 🧾 HU-02: Registro de variables del caso
+##  HU-02: Registro de variables del caso
 **Como** agente  
 **Quiero** registrar variables del caso (geolocalización, perfil, etc.)  
 **Para** enriquecer la evaluación del posible caso  
@@ -31,7 +31,7 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-## 🧾 HU-03: Clasificación automática de riesgo
+##  HU-03: Clasificación automática de riesgo
 **Como** sistema  
 **Quiero** calcular automáticamente el nivel de riesgo  
 **Para** apoyar la toma de decisiones del agente  
@@ -43,9 +43,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🚨 2. Módulo: Derivación y Alertas
+#  2. Módulo: Derivación y Alertas
 
-## 🧾 HU-04: Derivación automática
+##  HU-04: Derivación automática
 **Como** sistema  
 **Quiero** enviar automáticamente casos de riesgo medio o alto  
 **Para** alertar a Policía y Fiscalía  
@@ -57,9 +57,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 👥 3. Módulo: Gestión de Usuarios
+#  3. Módulo: Gestión de Usuarios
 
-## 🧾 HU-05: Gestión de roles
+##  HU-05: Gestión de roles
 **Como** administrador  
 **Quiero** asignar roles a los usuarios  
 **Para** controlar accesos al sistema  
@@ -71,9 +71,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🔐 4. Módulo: Auditoría y Seguridad
+#  4. Módulo: Auditoría y Seguridad
 
-## 🧾 HU-06: Registro de auditoría
+##  HU-06: Registro de auditoría
 **Como** sistema  
 **Quiero** registrar todas las acciones de los usuarios  
 **Para** garantizar trazabilidad y transparencia  
@@ -85,9 +85,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🌐 5. Módulo: Operación Offline
+#  5. Módulo: Operación Offline
 
-## 🧾 HU-07: Registro sin conexión
+##  HU-07: Registro sin conexión
 **Como** agente en zona sin internet  
 **Quiero** registrar casos sin conexión  
 **Para** no perder información en campo  
@@ -99,9 +99,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🔄 6. Módulo: Seguimiento del Caso
+#  6. Módulo: Seguimiento del Caso
 
-## 🧾 HU-08: Seguimiento interinstitucional
+##  HU-08: Seguimiento interinstitucional
 **Como** Policía/Fiscalía  
 **Quiero** actualizar el estado del caso  
 **Para** mantener seguimiento del proceso  
@@ -113,7 +113,7 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-## 🧾 HU-09: Gestión de evidencias
+##  HU-09: Gestión de evidencias
 **Como** agente  
 **Quiero** adjuntar documentos y evidencias  
 **Para** respaldar el caso  
@@ -125,9 +125,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 📊 7. Módulo: Análisis y Políticas
+#  7. Módulo: Análisis y Políticas
 
-## 🧾 HU-10: Generación de indicadores
+##  HU-10: Generación de indicadores
 **Como** analista  
 **Quiero** generar estadísticas  
 **Para** apoyar políticas migratorias  
@@ -139,7 +139,7 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-## 🧾 HU-11: Dashboard analítico
+##  HU-11: Dashboard analítico
 **Como** supervisor  
 **Quiero** ver dashboards en tiempo real  
 **Para** analizar tendencias  
@@ -151,9 +151,9 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🔁 8. Módulo: Gestión de Casos
+#  8. Módulo: Gestión de Casos
 
-## 🧾 HU-12: Reapertura de casos
+##  HU-12: Reapertura de casos
 **Como** supervisor  
 **Quiero** reabrir casos cerrados  
 **Para** continuar investigaciones  
@@ -165,30 +165,30 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 🔐 9. Requerimientos No Funcionales
+#  9. Requerimientos No Funcionales
 
-## 🧾 HU-13: Seguridad
+##  HU-13: Seguridad
 **Como** sistema  
 **Quiero** autenticar usuarios con OAuth2 o JWT  
 **Para** proteger el acceso al sistema  
 
 ---
 
-## 🧾 HU-14: Privacidad
+##  HU-14: Privacidad
 **Como** sistema  
 **Quiero** proteger datos sensibles  
 **Para** cumplir con normativas de protección de datos  
 
 ---
 
-## 🧾 HU-15: Rendimiento
+##  HU-15: Rendimiento
 **Como** usuario  
 **Quiero** que las consultas respondan en menos de 1 segundo  
 **Para** trabajar de forma eficiente  
 
 ---
 
-# 📌 Priorización (MoSCoW)
+#  Priorización (MoSCoW)
 
 - **Must:** HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07  
 - **Should:** HU-08, HU-09, HU-10  
@@ -196,7 +196,7 @@ Basado en el documento de especificaciones del sistema.
 
 ---
 
-# 📄 Especificación de Requerimientos
+#  Especificación de Requerimientos
 
 ## 3.1 Requerimientos Funcionales (RF)
 
