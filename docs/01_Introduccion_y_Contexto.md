@@ -1,31 +1,42 @@
-# 1. Introduccion y Contexto
-## 1.1 Proposito 
-Definir los requermientos  funcionales y no funcionales del sistema que permitira registrar, derivar, hacer seguimiento y analizar posibles casos de trata de personas detectados en puestos de control migratorio
+# 1. Introducción y Contexto
 
-Este documento se gestiona bajo el enfoque Docs-as-Code, utilizando Marckdown y control de versiones Git
+## 1.1 Propósito
+
+Definir los requerimientos funcionales y no funcionales del sistema de información que permitirá registrar, derivar, realizar seguimiento y analizar posibles casos de trata de personas detectados en puestos de control migratorio, en el marco de las funciones de la Dirección General de Migración (DIGEMIG).
+
+Este documento se gestiona bajo el enfoque **Docs-as-Code**, utilizando Markdown y control de versiones con Git, facilitando la trazabilidad, versionado y colaboración en el desarrollo del sistema.
 
 ## 1.2 Alcance del Sistema
-El sistema permitira:
 
-- Registrar informacion de posibles casos de trata detectados en puestos fronterizos
-- Almacenar y consultar datos relacionados a las victimas, indicadores de riesgo y acciones realizadas
-- Permitir la derivacion de casos a instituciones competentes mediantes servicios web
-- Realizar el seguimiento del estado de cada caso
-- Generacion de reportes e indicadores para analisi y formulacion de politicas publicas
-- Integracion de sistemas externos institucionales
-- Gestionar usuarios, roles y permisos
-- Registrar logs de acceso, consultas y reportes
-- Proveer manuales de uso, administracion y mantenimiento
+El sistema permitirá:
 
-## 1.3 Stakeholders
-- DIGEMIG -> Entidad ejecutora
-- OIM -> Oraganismo cooperante
-- Funcionarios migratorios -> Usuarios del sistema 
-- Instituciones vinculadas -> Receptoras de derivaciones
-- Equipo Tecnico -> Desarrollo
+- Registrar información de posibles casos de trata detectados en puestos fronterizos  
+- Almacenar y consultar datos relacionados a víctimas, indicadores de riesgo y acciones realizadas  
+- Permitir la derivación de casos a instituciones competentes mediante servicios web (API REST)  
+- Realizar el seguimiento del estado de cada caso  
+- Generar reportes e indicadores para análisis y formulación de políticas públicas  
+- Integrarse con sistemas externos institucionales  
+- Gestionar usuarios, roles y permisos del sistema  
+- Registrar logs de acceso, consultas y acciones realizadas  
+- Proveer documentación técnica, manual de usuario y manual de administración  
+
+## 1.3 Stakeholders del Sistema
+
+| Stakeholder | Rol | Interés en el sistema | Necesidades principales |
+|------------|-----|----------------------|------------------------|
+| DIGEMIG | Entidad ejecutora | Gestión y control del sistema | Información consolidada, toma de decisiones |
+| OIM | Organismo cooperante | Apoyo técnico y supervisión | Datos confiables, reportes e indicadores |
+| Agente Migratorio | Usuario operativo | Registro de casos | Interfaz sencilla, rapidez, funcionamiento offline |
+| Supervisor | Control y seguimiento | Monitoreo de casos | Visualización de estados, reportes |
+| Policía / Fiscalía | Instituciones receptoras | Atención de casos derivados | Notificaciones oportunas, acceso a información |
+| Analista | Evaluación | Análisis de datos | Reportes e indicadores estadísticos |
+| Administrador TI | Gestión técnica | Mantenimiento del sistema | Control de accesos, seguridad, logs |
+| Equipo de Desarrollo (XP) | Desarrollo del sistema | Implementación y mejora del software | Equipo conformado por roles XP: Customer (gestión de requisitos), 2 Programmers (desarrollo), Tester (pruebas) y Coach (seguimiento y mejora continua) |
 
 ## 1.4 Problema
-La gestion de informacion sobre posibles casos de trata y trafico en frontera presenta limitaciones en registro, seguimiento y analisis, dificultando la coordinacion interinstitucional y la generacion de informacion confiable.
 
-## 1.5 Objetivo del Sistema 
-Desarrollar un sistema de informacion que permita almacenar , consultar, derivar y analizar informacion sobre posibles casos de trata y trafico de personas, fortaleciendo la toma de decisiones y la implementacion de politicas migratorias
+La gestión de información sobre posibles casos de trata de personas en puestos fronterizos presenta limitaciones en el registro, seguimiento y análisis de los casos, lo que dificulta la coordinación interinstitucional y la generación de información confiable para la toma de decisiones.
+
+## 1.5 Objetivo del Sistema
+
+Desarrollar un sistema de información que permita registrar, almacenar, consultar, derivar y analizar información sobre posibles casos de trata de personas, fortaleciendo la toma de decisiones y la implementación de políticas migratorias basadas en evidencia.
