@@ -34,9 +34,9 @@ El sistema permitirá:
 | Stakeholder | Rol | Interés en el sistema | Necesidades principales |
 | Isaac Eleazar Surci Cuti | Customer| Definir funcionalidades del sistema | Priorización de requerimientos, validación de funcionalidades |
 | Doris Neyza Baltazar Torrez | Programmer | Implementación del sistema | Desarrollo de funcionalidades, código limpio y cumplimiento de requerimientos |
-| Cesar Daniel Condori Malpartida | Programmer | Implementación del sistema | Desarrollo eficiente, integración y pruebas continuas |
-| Luis Alberto Chura Zegarra | Tester | Validación del sistema | Ejecución de pruebas, detección de errores y aseguramiento de calidad |
-| Jazmin Cielo Canaviri Mamani | Coach | Seguimiento del proceso | Supervisión del desarrollo, mejora continua y apoyo técnico al equipo |
+| Cesar Daniel Condori Malpartida | Programmer | Implementación del sistema | Desarrollo de funcionalidades, código limpio y cumplimiento de requerimientos |
+| Luis Alberto Chura Zegarra | Programmer | Implementación del sistema | Desarrollo, pruebas técnicas y validación de funcionalidades |
+| Jazmin Cielo Canaviri Mamani | Programmer | Implementación del sistema | Desarrollo, soporte técnico y mejora continua del sistema |  
 ## 1.4 Problema
 
 La gestión de información sobre posibles casos de trata de personas en puestos fronterizos presenta limitaciones en el registro, seguimiento y análisis de los casos, lo que dificulta la coordinación interinstitucional y la generación de información confiable para la toma de decisiones.
