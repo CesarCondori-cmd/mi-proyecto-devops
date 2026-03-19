@@ -148,7 +148,7 @@ Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 - Restauración funcional  
 
 ### HU-14
-**Como** desarrollador
+**Como** desarrollador  
 **Quiero** desplegar nuevas versiones del sistema o restaurar versiones anteriores  
 **Para** mantener la estabilidad del sistema  
 
