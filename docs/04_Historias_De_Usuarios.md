@@ -138,7 +138,7 @@ Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 ## DevOps
 
 ### HU-13
-**Como** Isaac Eleazar Surci Cuti  
+**Como** customer  
 **Quiero** realizar respaldos automáticos del sistema  
 **Para** evitar pérdida de información  
 
@@ -148,7 +148,7 @@ Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 - Restauración funcional  
 
 ### HU-14
-**Como** Luis Alberto Chura Zegarra y Jazmín Cielo Canaviri Mamani  
+**Como** tester  
 **Quiero** desplegar nuevas versiones del sistema o restaurar versiones anteriores  
 **Para** mantener la estabilidad del sistema  
 
