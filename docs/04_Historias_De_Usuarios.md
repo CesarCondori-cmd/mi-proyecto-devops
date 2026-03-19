@@ -1,197 +1,158 @@
 #  4. Historias de Usuario
 ## Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 
-Basado en el documento de especificaciones del sistema.
+Sistema de Registro, Derivación y Seguimiento de Trata de Personas (DIGEMIG)
 
----
+## Registro y Evaluación de Casos
 
-#  1. Módulo: Registro y Evaluación de Casos
-
-##  HU-01: Registro de indicadores
+### HU-01
 **Como** agente migratorio  
-**Quiero** registrar indicadores físicos, conductuales y documentales  
+**Quiero** identificar y registrar indicadores físicos, conductuales y documentales  
 **Para** detectar posibles casos de trata de personas  
 
 **Criterios de aceptación:**
-- Se pueden marcar indicadores desde un formulario digital  
-- Los datos se guardan correctamente en la base de datos  
-- Se permite edición antes de enviar  
+- Registro mediante formulario digital  
+- Almacenamiento en menos de 2 segundos  
+- Permite edición antes de confirmar  
 
----
-
-##  HU-02: Registro de variables del caso
-**Como** agente  
-**Quiero** registrar variables del caso (geolocalización, perfil, etc.)  
-**Para** enriquecer la evaluación del posible caso  
+### HU-02
+**Como** agente migratorio  
+**Quiero** registrar variables del caso  
+**Para** mejorar la evaluación del caso  
 
 **Criterios de aceptación:**
-- Se registran al menos 5 variables principales y 8 de perfilamiento  
-- Se puede capturar ubicación automáticamente  
-- Se permite escaneo QR/OCR  
+- Registro de 5 variables principales y 8 adicionales  
+- Captura automática de ubicación  
+- Permite ingreso manual si falla QR/OCR  
 
----
-
-##  HU-03: Clasificación automática de riesgo
-**Como** sistema  
-**Quiero** calcular automáticamente el nivel de riesgo  
-**Para** apoyar la toma de decisiones del agente  
+### HU-03
+**Como** agente migratorio  
+**Quiero** que el sistema calcule automáticamente el nivel de riesgo  
+**Para** tomar decisiones oportunas  
 
 **Criterios de aceptación:**
-- Clasifica en Bajo / Medio / Alto  
-- Se basa en reglas definidas  
-- Se ejecuta automáticamente al guardar  
+- Clasificación automática (Bajo, Medio, Alto)  
+- Tiempo de cálculo menor a 1 segundo  
 
----
+## Derivación y Alertas
 
-#  2. Módulo: Derivación y Alertas
-
-##  HU-04: Derivación automática
-**Como** sistema  
-**Quiero** enviar automáticamente casos de riesgo medio o alto  
-**Para** alertar a Policía y Fiscalía  
+### HU-04
+**Como** agente migratorio  
+**Quiero** derivar automáticamente casos críticos  
+**Para** activar la intervención de instituciones  
 
 **Criterios de aceptación:**
-- Se envía notificación automática  
-- Se generan formularios electrónicos  
-- Solo aplica para riesgo medio/alto  
+- Envío en menos de 5 segundos  
+- Registro de confirmación  
+- Aplica solo para riesgo medio/alto  
 
----
+## Gestión de Usuarios
 
-#  3. Módulo: Gestión de Usuarios
-
-##  HU-05: Gestión de roles
+### HU-05
 **Como** administrador  
-**Quiero** asignar roles a los usuarios  
+**Quiero** gestionar usuarios y roles  
 **Para** controlar accesos al sistema  
 
 **Criterios de aceptación:**
-- Roles: Agente, Supervisor, Institución Receptora, Admin TI  
-- Permisos diferenciados  
-- Acceso seguro  
+- CRUD de usuarios  
+- Permisos por rol  
+- Acceso restringido  
 
----
+## Auditoría
 
-#  4. Módulo: Auditoría y Seguridad
-
-##  HU-06: Registro de auditoría
-**Como** sistema  
-**Quiero** registrar todas las acciones de los usuarios  
-**Para** garantizar trazabilidad y transparencia  
+### HU-06
+**Como** administrador TI  
+**Quiero** registrar todas las acciones del sistema  
+**Para** garantizar trazabilidad  
 
 **Criterios de aceptación:**
 - Logs inalterables  
+- Registro de accesos y cambios  
 - Almacenamiento por 10 años  
-- Registro de sesiones y cambios  
 
----
+## Operación Offline
 
-#  5. Módulo: Operación Offline
-
-##  HU-07: Registro sin conexión
-**Como** agente en zona sin internet  
+### HU-07
+**Como** agente migratorio  
 **Quiero** registrar casos sin conexión  
 **Para** no perder información en campo  
 
 **Criterios de aceptación:**
-- Permite trabajar offline  
-- Sincroniza cuando hay conexión  
-- No se pierden datos  
+- Funcionamiento offline  
+- Sincronización automática  
+- Sin pérdida de datos  
 
----
+## Seguimiento del Caso
 
-#  6. Módulo: Seguimiento del Caso
-
-##  HU-08: Seguimiento interinstitucional
+### HU-08
 **Como** Policía/Fiscalía  
 **Quiero** actualizar el estado del caso  
-**Para** mantener seguimiento del proceso  
+**Para** dar seguimiento  
 
 **Criterios de aceptación:**
-- Estados como “Judicializado”  
-- Acceso por instituciones externas  
-- Historial de cambios  
+- Cambio de estado  
+- Registro en historial  
+- Actualización en menos de 2 segundos  
 
----
-
-##  HU-09: Gestión de evidencias
-**Como** agente  
-**Quiero** adjuntar documentos y evidencias  
+### HU-09
+**Como** agente migratorio  
+**Quiero** adjuntar evidencias  
 **Para** respaldar el caso  
 
 **Criterios de aceptación:**
-- Subida de archivos (PDF, imágenes, video)  
-- Asociación al caso  
+- Subida de archivos  
+- Tamaño máximo 10MB  
 - Visualización posterior  
 
----
+## Análisis
 
-#  7. Módulo: Análisis y Políticas
-
-##  HU-10: Generación de indicadores
+### HU-10
 **Como** analista  
-**Quiero** generar estadísticas  
-**Para** apoyar políticas migratorias  
+**Quiero** generar reportes  
+**Para** apoyar la toma de decisiones  
 
 **Criterios de aceptación:**
-- Reportes automáticos  
-- Datos agregados  
-- Exportación de resultados  
+- Generación en menos de 3 segundos  
+- Exportación en PDF/Excel  
 
----
-
-##  HU-11: Dashboard analítico
+### HU-11
 **Como** supervisor  
-**Quiero** ver dashboards en tiempo real  
+**Quiero** visualizar dashboards  
 **Para** analizar tendencias  
 
 **Criterios de aceptación:**
-- Mapas de calor  
 - Gráficos dinámicos  
-- Datos actualizados  
+- Datos en tiempo real  
 
----
+## Gestión de Casos
 
-#  8. Módulo: Gestión de Casos
-
-##  HU-12: Reapertura de casos
+### HU-12
 **Como** supervisor  
 **Quiero** reabrir casos cerrados  
 **Para** continuar investigaciones  
 
 **Criterios de aceptación:**
-- Se requiere justificación  
-- Se registra en auditoría  
-- Mantiene historial  
+- Justificación obligatoria  
+- Registro en auditoría  
 
----
+## DevOps
 
-#  9. Requerimientos No Funcionales
+### HU-13
+**Como** Isaac Eleazar Surci Cuti  
+**Quiero** realizar respaldos automáticos del sistema  
+**Para** evitar pérdida de información  
 
-##  HU-13: Seguridad
-**Como** sistema  
-**Quiero** autenticar usuarios con OAuth2 o JWT  
-**Para** proteger el acceso al sistema  
+**Criterios de aceptación:**
+- Respaldo semanal automático  
+- Almacenamiento seguro  
+- Restauración funcional  
 
----
+### HU-14
+**Como** Luis Alberto Chura Zegarra y Jazmín Cielo Canaviri Mamani  
+**Quiero** desplegar nuevas versiones del sistema o restaurar versiones anteriores  
+**Para** mantener la estabilidad del sistema  
 
-##  HU-14: Privacidad
-**Como** sistema  
-**Quiero** proteger datos sensibles  
-**Para** cumplir con normativas de protección de datos  
-
----
-
-##  HU-15: Rendimiento
-**Como** usuario  
-**Quiero** que las consultas respondan en menos de 1 segundo  
-**Para** trabajar de forma eficiente  
-
----
-
-#  Priorización (MoSCoW)
-
-- **Must:** HU-01, HU-02, HU-03, HU-04, HU-05, HU-06, HU-07  
-- **Should:** HU-08, HU-09, HU-10  
-- **Could:** HU-11, HU-12  
-
----
+**Criterios de aceptación:**
+- Despliegue sin interrupción  
+- Rollback disponible  
+- Registro de versiones  
