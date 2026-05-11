@@ -24,10 +24,11 @@ Definición del conjunto de herramientas y tecnologías seleccionadas para la im
 
 | Patrón | Aplicación | Beneficio |
 | :--- | :--- | :--- |
-| **Strategy** | Motor de Riesgo [cite: 50] | Intercambio de algoritmos de evaluación sin afectar el registro. |
-| **State** | Ciclo de Vida del Caso [cite: 53] | Control rígido de transiciones y estados de los casos. |
-| **Repository** | Acceso a Datos [cite: 56] | Aislamiento de la lógica de negocio de la base de datos. |
-| **Facade** | Interoperabilidad [cite: 59] | Centralización de llamadas a sistemas externos (Fiscalía/Policía). |
+| **MVC / MVT** | Interfaz web | Utilizado para la organización de la interfaz web y formularios dinámicos. |
+| **Strategy** | Motor de Riesgo | Intercambio de algoritmos de evaluación sin afectar el registro. |
+| **State** | Ciclo de Vida del Caso  | Control rígido de transiciones y estados de los casos. |
+| **Repository** | Acceso a Datos  | Aislamiento de la lógica de negocio de la base de datos. |
+| **Facade** | Interoperabilidad  | Centralización de llamadas a sistemas externos (Fiscalía/Policía). |
 
 
 ## 5. Seguridad y Auditoría
