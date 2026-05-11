@@ -1,1 +1,0 @@
-![Diagrama_de_Actividades](Diagrama_de_Actividades.svg)
