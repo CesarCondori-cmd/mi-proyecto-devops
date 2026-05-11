@@ -9,3 +9,4 @@ Sistema de informacion para el Registro, Derivacion y Seguimiento de Casos de tr
 3. [Requerimientos No Funcionales (DevOps)](03_Requerimientos_No_Funcionales_DevOps.md)  
 4. [Historias de Usuarios](04_Historias_De_Usuarios.md) 
 5. [Arquitectura del Sistema](05_Arquitectura_del_Sistema.md)
+6. [Stack Tecnologico](06_Stack_Tecnologico.md)
