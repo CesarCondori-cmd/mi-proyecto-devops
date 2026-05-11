@@ -20,37 +20,7 @@ Definición del conjunto de herramientas y tecnologías seleccionadas para la im
 * **Almacenamiento de Archivos**: Sistema de archivos institucional o almacenamiento S3 para evidencias (PDF e imágenes).
 * **Estrategia**: Control granular de accesos a nivel de tablas y columnas para protección de datos sensibles.
 
-## 4. Infraestructura y Despliegue 
-* **Servidor Web**: Nginx o Apache para el servicio de la aplicación frontend.
-* **Integración Externa**: Comunicación segura mediante protocolos HTTPS y arquitectura de microservicios o modular conectada vía API REST.
-* **Seguridad de Capa**: Cifrado de datos en tránsito y en reposo para cumplir normativas de confidencialidad.
-
-
-## 2. Stack Tecnológico Detallado
-
-### 2.1 Backend (Núcleo Pro-Empresarial)
-Se selecciona un enfoque robusto para manejar procesos largos y cumplir con estándares gubernamentales.
-
-* **Lenguaje/Framework:** Java con Spring Boot.
-* **Seguridad:** JWT / OAuth2 para un sistema *stateless*.
-* **Persistencia:** JPA / Hibernate.
-* **Procesamiento:** Spring Batch para tareas de sincronización y validación masiva.
-* **Reportes:** Soporte para JasperReports e iText para la generación de PDFs.
-
-### 2.2 Frontend (Interfaz Avanzada)
-Se opta por Angular para manejar formularios dinámicos complejos y estados avanzados.
-
-* **Framework:** Angular.
-* **Gestión de Estado:** RxJS / NgRx para flujos de datos asíncronos
-* **Interfaz de Usuario (UI):** Angular Material para una experiencia de usuario estandarizada.
-
-### 2.3 Persistencia de Datos
-* **Motor:** PostgreSQL.
-* **Justificación:** Proporciona control granular de accesos a nivel de tablas/columnas y cumple con normativas institucionales de integridad.
-* **Archivos:** Almacenamiento de evidencias en File System institucional o S3.
-
-
-## 3. Patrones de Diseño Aplicados
+## 4. Patrones de Diseño Aplicados
 
 | Patrón | Aplicación | Beneficio |
 | :--- | :--- | :--- |
@@ -60,18 +30,21 @@ Se opta por Angular para manejar formularios dinámicos complejos y estados avan
 | **Facade** | Interoperabilidad [cite: 59] | Centralización de llamadas a sistemas externos (Fiscalía/Policía). |
 
 
-## 4. Seguridad y Auditoría
+## 5. Seguridad y Auditoría
 * **Autenticación:** Sistema basado en JWT; las credenciales no se almacenan en el cliente.
 * **Autorización:** Control de Acceso Basado en Roles (**RBAC**) validado en Frontend y Backend.
 * **Trazabilidad:** Interceptor global que registra UsuarioID, Acción, Timestamp, IP y datos afectados en tablas de auditoría inalterables.
 
-
-
-## 5. Estrategia Offline First
+## 6. Estrategia Offline First
 Diseñado para la operación en puestos fronterizos con baja conectividad:
 1.  **Persistencia Local:** Uso de LocalStorage/IndexedDB para guardado temporal de formularios.
 2.  **Sincronización:** El **Sync Manager** del backend procesa datos diferidos una vez recuperada la red.
 3.  **Conflictos:** Resolución mediante marcas de tiempo (Timestamps) para preservar la versión más reciente.
+
+## 7. Infraestructura y Despliegue 
+* **Servidor Web**: Nginx o Apache para el servicio de la aplicación frontend.
+* **Integración Externa**: Comunicación segura mediante protocolos HTTPS y arquitectura de microservicios o modular conectada vía API REST.
+* **Seguridad de Capa**: Cifrado de datos en tránsito y en reposo para cumplir normativas de confidencialidad.
 
 
 > **Conclusión:** El stack tecnológico combina robustez empresarial con estructuras modernas, garantizando la seguridad y sostenibilidad del sistema DIGEMIG.
