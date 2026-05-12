@@ -9,7 +9,7 @@ COPY pom.xml .
 RUN mkdir -p src/main/java
 
 # 3. Intentamos compilar (si no hay código, generará un jar básico o saltará)
-RUN mvn clean package -DskipTests || echo "Esperando código fuente..."
+RUN mvn clean package -DskipTests || echo "Ignorando error de compilación por falta de código"
 
 # ETAPA DE EJECUCIÓN (RUN)
 FROM openjdk:17-jdk-slim

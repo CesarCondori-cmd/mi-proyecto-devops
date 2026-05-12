@@ -30,10 +30,10 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Construir y subir imagen a GitHub Packages
+      - name: Construir y subir imagen
         uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          # Esto guarda la imagen con el nombre de tu repositorio
-          tags: ghcr.io/${{ github.repository }}:latest
+          # Esta línea usa 'github.repository_owner' y el nombre que tú elijas en minúsculas
+          tags: ghcr.io/${{ github.repository_owner }}/backend-java:latest
