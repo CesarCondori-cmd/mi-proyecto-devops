@@ -9,10 +9,10 @@ COPY pom.xml .
 RUN mkdir -p src/main/java
 
 # 3. Intentamos compilar (si no hay código, generará un jar básico o saltará)
-RUN mvn clean package -DskipTests || echo "Ignorando error de compilación por falta de código"
+RUN mvn clean package -DskipTests || echo "Ignorando falta de código"
 
 # ETAPA DE EJECUCIÓN (RUN)
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 
 # 4. Mensaje de éxito para el entorno
