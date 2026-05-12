@@ -11,3 +11,4 @@ Sistema de informacion para el Registro, Derivacion y Seguimiento de Casos de tr
 5. [Arquitectura del Sistema](05_Arquitectura_del_Sistema.md)
 6. [Stack Tecnologico](06_Stack_Tecnologico.md)
 7. [Diagramas UML](07_Diseño_UML/)
+8. [Cronograma](08_Cronograma/08_01_Cronograma.png)
