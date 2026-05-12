@@ -3,7 +3,7 @@ gantt
     title Planeamiento de Iteraciones
     dateFormat  YYYY-MM-DD
     axisFormat  %d-%b
-    todayMarker 2026-08-13
+    todayMarker off
 
     section Iteración 1
     HU-06 Auditoría del sistema               :a1, 2026-04-02, 14d
