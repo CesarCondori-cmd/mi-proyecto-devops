@@ -19,38 +19,38 @@
 
 ## **ÍNDICE GENERAL**
 
-1. **PARADIGMA Y FILOSOFÍA DE EJECUCIÓN**  
-   * 1.1. Paradigma Híbrido Estructurado (Predictivo \- Adaptativo / XP)  
-   * 1.2. Filosofía de Ejecución Basada en Valores de XP  
-2. **ACTA DE CONSTITUCIÓN DEL PROYECTO (PROJECT CHARTER)**  
-   * 2.1. Información General  
-   * 2.2. Designación del Equipo y Roles   
-3. **GESTIÓN DEL ALCANCE Y TAMAÑO DEL SOFTWARE**  
-   * 3.1. Inclusiones y Exclusiones del Proyecto  
-   * 3.2. Estimación del Tamaño del Software (Puntos de Función)  
-   * 3.3. Gobernanza y Valor Esperado (KPIs)  
-   * 3.4. Estructura de Desglose del Trabajo (EDT / WBS)  
-   * 3.5. Diccionario de la EDT (Resumen de Paquetes Críticos)  
-   * 3.6. Control, Validación y Aceptación Formal del Alcance (DoD)  
-4. **GESTIÓN DEL TIEMPO Y CRONOGRAMA**  
-   * 4.1. Hitos de Control y Entregables (Línea Base del Cronograma)  
-   * 4.2. Gestión de Buffers  
-   * 4.3. Ruta Crítica del Sistema  
-   * 4.4. Técnicas de Control (EVM \- Earned Value Management)  
-   * 4.5. Calendario de Recursos  
-5. **GESTIÓN FINANCIERA Y PRESUPUESTO**  
-   * 5.1. Estructura Presupuestaria Detallada  
-   * 5.2. Línea Base de Costos (BAC) y Reservas de Seguridad  
-   * 5.3. Plan de Pagos Vinculado a Entregables  
-6. **PLAN DE COMUNICACIÓN E INTERESADOS**  
-   * 6.1. Objetivos de la Comunicación  
-   * 6.2. Matriz de Comunicación del Proyecto  
-   * 6.3. Gestión de Interesados (Stakeholders Management)  
-   * 6.4. Protocolo de Gestión de Conflictos y Cambios  
-7. **PLAN DE GESTIÓN DE RIESGOS**  
-   * 7.1. Metodología de Análisis y Matriz de Riesgos  
-   * 7.2. Reservas Financieras para Mitigación de Riesgos  
-8. **CONCLUSIÓN Y VIABILIDAD**
+1. **[PARADIGMA Y FILOSOFÍA DE EJECUCIÓN](#1-paradigma-y-filosofía-de-ejecución)**  
+   * [1.1. Paradigma Híbrido Estructurado (Predictivo - Adaptativo / XP)](#11-paradigma-híbrido-estructurado-predictivo---adaptativo--xp)  
+   * [1.2. Filosofía de Ejecución Basada en Valores de XP](#12-filosofía-de-ejecución-basada-en-valores-de-xp)  
+2. **[ACTA DE CONSTITUCIÓN DEL PROYECTO (PROJECT CHARTER)](#2-acta-de-constitución-del-proyecto-project-charter)**  
+   * [2.1. Información General](#21-información-general)  
+   * [2.2. Designación del Equipo y Roles](#22-designación-del-equipo-y-roles)  
+3. **[GESTIÓN DEL ALCANCE Y TAMAÑO DEL SOFTWARE](#3-gestión-del-alcance-y-tamaño-del-software)**
+   * [3.1. Inclusiones y Exclusiones del Proyecto](#31-inclusiones-y-exclusiones-del-proyecto)
+   * [3.2. Estimación del Tamaño del Software (Puntos de Función)](#32-estimación-del-tamaño-del-software-puntos-de-fusión)
+   * [3.3. Gobernanza y Valor Esperado (KPIs)](#33-gobernanza-y-valor-esperado-kpis)
+   * [3.4. Estructura de Desglose del Trabajo (EDT / WBS)](#34-estructura-de-desglose-del-trabajo-edt--wbs)
+   * [3.5. Diccionario de la EDT (Resumen de Paquetes Críticos)](#35-diccionario-de-la-edt-resumen-de-paquetes-críticos)
+   * [3.6. Control, Validación y Aceptación Formal del Alcance (DoD)](#36-control-validación-y-aceptación-formal-del-alcance-dod)
+4. **[GESTIÓN DEL TIEMPO Y CRONOGRAMA](#4-gestión-del-tiempo-y-cronograma)**
+   * [4.1. Hitos de Control y Entregables (Línea Base del Cronograma)](#41-hitos-de-control-y-entregables-línea-base-del-cronograma)
+   * [4.2. Gestión de Buffers](#42-gestión-de-buffers)
+   * [4.3. Ruta Crítica del Sistema](#43-ruta-crítica-del-sistema)
+   * [4.4. Técnicas de Control (EVM - Earned Value Management)](#44-técnicas-de-control-evm---earned-value-management)
+   * [4.5. Calendario de Recursos](#45-calendario-de-recursos)
+5. **[GESTIÓN FINANCIERA Y PRESUPUESTO](#5-gestión-financiera-y-presupuesto)**
+   * [5.1. Estructura Presupuestaria Detallada](#51-estructura-presupuestaria-detallada)
+   * [5.2. Línea Base de Costos (BAC) y Reservas de Seguridad](#52-línea-base-de-costos-bac-y-reservas-de-seguridad)
+   * [5.3. Plan de Pagos Vinculado a Entregables](#53-plan-de-pagos-vinculado-a-entregables)
+6. **[PLAN DE COMUNICACIÓN E INTERESADOS](#6-plan-de-comunicación-e-interesados)**
+   * [6.1. Objetivos de la Comunicación](#61-objetivos-de-la-comunicación)
+   * [6.2. Matriz de Comunicación del Proyecto](#62-matriz-de-comunicación-del-proyecto)
+   * [6.3. Gestión de Interesados (Stakeholders Management)](#63-gestión-de-interesados-stakeholder-management)
+   * [6.4. Protocolo de Gestión de Conflictos y Cambios](#64-protocolo-de-gestión-de-conflictos-y-cambios)
+7. **[PLAN DE GESTIÓN DE RIESGOS](#7-plan-de-gestión-de-riesgos)**
+   * [7.1. Metodología de Análisis y Matriz de Riesgos](#71-metodología-de-análisis-y-matriz-de-riesgos)
+   * [7.2. Reservas Financieras para Mitigación de Riesgos](#72-reservas-financieras-para-mitigación-de-riesgos)
+8. **[CONCLUSIÓN Y VIABILIDAD](#8-conclusión-y-viabilidad)**
 ## 
 ## **1\. PARADIGMA Y FILOSOFÍA DE EJECUCIÓN**
 
