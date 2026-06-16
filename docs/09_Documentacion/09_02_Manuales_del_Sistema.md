@@ -1,5 +1,85 @@
 # **Sistema de Información para el Registro, Derivación y Seguimiento de Casos de Trata de Personas \- DIGEMIG**
 
+## **Índice General**
+
+**MANUAL DE USUARIO Y OPERACIÓN DE NEGOCIO**
+* [1. Introducción](#1-introducción)  
+    * [1.1 Guía de inicio rápido](#11-guía-de-inicio-rápido)  
+* [2. Flujos de trabajo operativos (Workflows)](#2-flujos-de-trabajo-operativos-workflows)  
+    * [2.1 Registro integral de indicadores (Agente migratorio)](#21-registro-integral-de-indicadores-agente-migratorio)  
+    * [2.2 Evaluación de riesgo y derivación automática (Supervisor / Institución receptora)](#22-evaluación-de-riesgo-y-derivación-automática-supervisor--institución-receptora)  
+    * [2.3 Operación en zonas de baja conectividad (Modo Offline)](#23-operación-en-zonas-de-baja-conectividad-modo-offline)  
+* [3. Gestión de evidencias y seguimiento](#3-gestión-de-evidencias-y-seguimiento)  
+    * [3.1 Carga de evidencias](#31-carga-de-evidencias)  
+    * [3.2 Seguimiento](#32-seguimiento)  
+* [4. Roles de supervisión y análisis de datos](#4-roles-de-supervisión-y-análisis-de-datos)  
+* [5. Seguridad y confidencialidad](#5-seguridad-y-confidencialidad)  
+* [6. Glosario y resolución de problemas (FAQ)](#6-glosario-y-resolución-de-problemas-faq)  
+    * [6.1 Glosario](#61-glosario)  
+    * [6.2 FAQ](#62-faq)  
+
+**MANUAL DE INSTALACIÓN Y CONFIGURACIÓN**
+* [1. Introducción](#1-introducción-1)  
+    * [1.1 Audiencia](#11-audiencia)  
+* [2. Requisitos del sistema: Hardware, SO y dependencias](#2-requisitos-del-sistema-hardware-so-y-dependencias)  
+    * [2.1 Hardware (Mínimo recomendado)](#21-hardware-mínimo-recomendado)  
+    * [2.2 Software y Dependencias](#22-software-y-dependencias)  
+* [3. Pasos de configuración: Variables de entorno y servicios](#3-pasos-de-configuración-variables-de-entorno-y-servicios)  
+    * [3.1 PASO 1: Clonación y Preparación](#31-paso-1-clonación-y-preparación)  
+    * [3.2 PASO 2: Inicialización de Base de Datos](#32-paso-2-inicialización-de-base-de-datos)  
+    * [3.3 PASO 3: Configuración de variables de entorno](#33-paso-3-configuración-de-variables-de-entorno)  
+    * [3.4 PASO 4: Despliegue con docker](#34-paso-4-despliegue-con-docker)  
+    * [3.5 PASO 5: Configuración del API Gateway](#35-paso-5-configuración-del-api-gateway)  
+* [4. Verificación: Pruebas de humo](#4-verificación-pruebas-de-humo)  
+* [5. Rollback y Procedimientos de recuperación](#5-rollback-y-procedimientos-de-recuperación)  
+    * [5.1 Procedimiento de Rollback](#51-procedimiento-de-rollback)  
+    * [5.2 Respaldos y Retención de auditoría](#52-respaldos-y-retención-de-auditoría)  
+
+**MANUAL TÉCNICO DE ARQUITECTURA Y DISEÑO DE SOFTWARE**
+* [1. Control de Documento y Stakeholders](#1-control-de-documento-y-stakeholders)  
+    * [1.1 Historial de versiones](#11-historial-de-versiones)  
+    * [1.2 Matriz de responsabilidades del equipo técnico](#12-matriz-de-responsabilidades-del-equipo-técnico)  
+* [2. Filosofía Arquitectónica y Capas del Sistema](#2-filosofía-arquitectónica-y-capas-del-sistema)  
+    * [2.1 Descripción de las capas](#21-descripción-de-las-capas)  
+    * [2.2 Patrones de diseño aplicados](#22-patrones-de-diseño-aplicados)  
+* [3. Diccionario de Datos en PostgreSQL](#3-diccionario-de-datos-en-postgresql)  
+* [4. Diagrama de Clases UML](#4-diagrama-de-clases-uml)  
+* [5. Protocolo de Sincronización y Estrategia Offline-First](#5-protocolo-de-sincronización-y-estrategia-offline-first)  
+* [6. Plan de Aseguramiento de la Calidad (QA)](#6-plan-de-aseguramiento-de-la-calidad-qa)  
+    * [6.1 Pruebas unitarias y cobertura lógica](#61-pruebas-unitarias-y-cobertura-lógica)  
+    * [6.2 Criterios de estrés y rendimiento](#62-criterios-de-estrés-y-rendimiento)  
+* [7. Plan de Mantenimiento y Continuidad de Operaciones](#7-plan-de-mantenimiento-y-continuidad-de-operaciones)  
+    * [7.1 Estrategia de respaldos (Backups automatizados)](#71-estrategia-de-respaldos-backups-automatizados)  
+    * [7.2 Protocolo de rollback automatizado ante despliegues fallidos](#72-protocolo-de-rollback-automatizado-ante-despliegues-fallidos)  
+        
+**PLAN DE PRUEBAS DE SOFTWARE**
+* [1. Alcance de las pruebas](#1-alcance-de-las-pruebas)  
+* [2. Niveles de pruebas aplicados (Según estrategia)](#2-niveles-de-pruebas-aplicados-según-estrategia)  
+* [3. Matriz de diseño de casos de prueba (Mapeo de requerimientos)](#3-matriz-de-diseño-de-casos-de-prueba-mapeo-de-requerimientos)  
+* [4. Criterios de aceptación y rechazo de las pruebas](#4-criterios-de-aceptación-y-rechazo-de-las-pruebas)  
+
+**MANUAL DE MANTENIMIENTO DE SOFTWARE**
+* [1. Alcance y objetivos del mantenimiento](#1-alcance-y-objetivos-del-mantenimiento)  
+    * [1.1 Objetivos estratégicos](#11-objetivos-estratégicos)  
+    * [1.2 Activos y elementos bajo mantenimiento](#12-activos-y-elementos-bajo-mantenimiento)  
+* [2. Gobernanza del Stack Tecnológico y Arquitectura](#2-gobernanza-del-stack-tecnológico-y-arquitectura)  
+    * [2.1 Backend (Java / Spring Boot)](#21-backend-java--spring-boot)  
+    * [2.2 Frontend (Angular)](#22-frontend-angular)  
+    * [2.3 Persistencia y Seguridad de datos (PostgreSQL)](#23-persistencia-y-seguridad-de-datos-postgresql)  
+* [3. Procedimientos Operativos por Tipos de Mantenimiento](#3-procedimientos-operativos-por-tipos-de-mantenimiento)  
+    * [3.1 Mantenimiento correctivo (Resolución de incidentes)](#31-mantenimiento-correctivo-resolución-de-incidentes)  
+    * [3.2 Mantenimiento preventivo (Monitoreo e Integridad)](#32-mantenimiento-preventivo-monitoreo-e-integridad)  
+    * [3.3 Mantenimiento adaptativo (Seguridad y Entorno)](#33-mantenimiento-adaptativo-seguridad-y-entorno)  
+    * [3.4 Mantenimiento evolutivo (Modificaciones sin rediseño)](#34-mantenimiento-evolutivo-modificaciones-sin-rediseño)  
+* [4. Interfaz de DevOps, Respaldos y Contingencia (Rollback)](#4-interfaz-de-devops-respaldos-y-contingencia-rollback)  
+    * [4.1 Protocolo de contingencia operativa ante actualizaciones](#41-protocolo-de-contingencia-operativa-ante-actualizaciones)  
+    * [4.2 Política estricta de respaldos (Backups)](#42-política-estricta-de-respaldos-backups)  
+* [5. Entregables, Informes y Filosofía de Actualización](#5-entregables-informes-y-filosofía-de-actualización)  
+    * [5.1 Filosofía del documento como ecosistema viviente](#51-filosofía-del-documento-como-ecosistema-viviente)  
+    * [5.2 Recomendación de centralización de la documentación](#52-recomendación-de-centralización-de-la-documentación)  
+    * [5.3 Informes de operaciones obligatorios](#53-informes-de-operaciones-obligatorios)  
+##
+
 # **MANUAL DE USUARIO Y OPERACIÓN DE NEGOCIO**
 
 ## **1\. Introducción**
